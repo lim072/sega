@@ -1,0 +1,153 @@
+#newCon {
+width: 100%;
+    h2 {
+        display: block;
+        font: bold 30px/1.5 "arial";
+        color: darkblue;
+        border-bottom: 1px solid darkblue;
+    }
+
+    span:nth-of-type(1) {
+        font: bold 12px/1.5 "애플 고딕";
+        color: darkblue;
+    }
+
+    span:nth-of-type(2) {
+        font: 12px/1.5 "애플 고딕";
+    }
+
+    table {
+        width: 100%;
+        margin-top: 30px;
+        border-top: 2px solid #444;
+        border-collapse: collapse;
+        margin-bottom: 40px;
+
+        thead {
+            tr {
+
+                th {
+                    padding: 15px;
+                    background-color: darkblue;
+                    color: #fff;
+                    font: bold 12px/1 '맑은 고딕';
+
+
+                    &:nth-of-type(1) {
+                        width: 5%;
+                    }
+
+                    &:nth-of-type(3) {
+                        width: 10%;
+                    }
+                }
+            }
+        }
+
+        #newT {
+            tr {
+                &:nth-of-type(odd) {
+                    background-color: aliceblue;
+
+
+                }
+
+                &:hover {
+                    background-color: lightblue;
+
+                }
+
+                td {
+                    padding: 10px;
+                    border-bottom: 1px solid #000;
+                    text-align: center;
+                    font: 12px/1 '맑은 고딕';
+
+                    &:nth-of-type(2) {
+                        text-align: left;
+                    }
+
+                    a {
+                        color: #444;
+                    }
+
+
+                }
+            }
+        }
+
+    }
+
+    .page {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 100px;
+        
+
+        .pagePrev,
+        .pageNext {
+            width: 30px;
+            height: 30px;
+            border: solid 1px darkblue;
+            border-radius: 8px;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .pagePrev {
+            .clip {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 20px;
+                height: 20px;
+                clip-path: polygon(100% 0, 100% 100%, 0% 50%);
+                background-color: darkblue;
+            }
+
+            &:hover {
+                background-color: darkblue;
+
+                .clip {
+                    background-color: #fff;
+                }
+            }
+        }
+
+        .pageNext {
+            .clip {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 20px;
+                height: 20px;
+                clip-path: polygon(0 0, 0 100%, 100% 50%);
+                background-color: darkblue;
+            }
+
+            &:hover {
+                background-color: darkblue;
+
+                .clip {
+                    background-color: #fff;
+                }
+            }
+        }
+
+        .num {
+            width: 200px;
+            height: 30px;
+            font: 12px/30px 'arial';
+            display: flex;
+            justify-content: space-around;
+
+            a {
+                color: #444;
+            }
+        }
+    }
+}

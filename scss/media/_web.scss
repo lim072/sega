@@ -1,0 +1,449 @@
+@media screen and (max-width: 1800px) {
+  header {
+    .inner {
+      width: 100%;
+
+      .waple {
+        display: none;
+      }
+      .wapleOn {
+        display: none;
+      }
+      .gnb {
+       
+
+        li > a {
+          width: 100px;
+          height: 80px;
+          font: bold 15px/80px "애플 고딕";
+        }
+
+        .sub {
+          li {
+            a {
+              width: 100px;
+              font: 12px/80px "애플 고딕";
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #visual {
+    height: 41vw;
+
+    .frame {
+      height: 100%;
+    }
+  }
+
+  .new {
+    .inner {
+      width: 100%;
+      padding: 20px;
+
+      .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        li {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  .title {
+    .inner {
+      width: 100%;
+
+      .ch {
+        img {
+          &:nth-of-type(1) {
+            display: none;
+          }
+
+          &:nth-of-type(3) {
+            display: none;
+          }
+
+          &:nth-of-type(4) {
+            right: 10%;
+          }
+        }
+      }
+
+      .screen {
+        width: 70%;
+        left: 220px;
+        .screenMain {
+          img {
+            width: 100%;
+          }
+        }
+
+        div {
+          &.game5 {
+            img {
+              &:nth-of-type(2) {
+                left: -500%;
+              }
+            }
+          }
+
+          &.game7 {
+            img {
+              &:nth-of-type(1) {
+                display: none;
+              }
+
+              &:nth-of-type(19) {
+                transition: 0.5s;
+              }
+
+              &:nth-of-type(18) {
+                transition: 0.5s;
+              }
+
+              &:nth-of-type(20) {
+                transition: 0.5s 0.3s;
+              }
+
+              &:nth-of-type(21) {
+                transition: 0.5s 0.8s;
+              }
+            }
+          }
+
+          &.on {
+            &.game1 {
+              img {
+                &:nth-of-type(3) {
+                  display: none;
+                }
+
+                &:nth-of-type(4) {
+                  top: 15%;
+                  left: -5%;
+                  transform: scale(0.7) rotate(360deg);
+                }
+
+                &:nth-of-type(5) {
+                  width: 20%;
+                }
+              }
+            }
+
+            &.game2 {
+              img {
+                &:nth-of-type(3) {
+                  width: 50%;
+                }
+              }
+            }
+
+            &.game3 {
+              img {
+                &:nth-of-type(3) {
+                  left: 15%;
+                }
+
+                &:nth-of-type(4) {
+                  display: none;
+                }
+
+                &:nth-of-type(5) {
+                  width: 70%;
+                  left: 5%;
+                }
+
+                &:nth-of-type(6) {
+                  display: none;
+                }
+              }
+            }
+
+            &.game4 {
+              img {
+                &:nth-of-type(1) {
+                  width: 100%;
+                }
+
+                &:nth-of-type(2) {
+                  left: 30px;
+                }
+
+                &:nth-of-type(3) {
+                  display: none;
+                }
+
+                &:nth-of-type(4) {
+                  left: 220px;
+                }
+
+                &:nth-of-type(5) {
+                  display: none;
+                }
+
+                &:nth-of-type(6) {
+                  left: 50%;
+                }
+
+                &:nth-of-type(7) {
+                  width: 50%;
+                }
+              }
+            }
+
+            &.game5 {
+              width: 100%;
+              height: 100%;
+              overflow: hidden;
+              position: absolute;
+
+              img {
+                position: absolute;
+
+                &:nth-of-type(1) {
+                  width: 100%;
+                  height: 100%;
+                }
+
+                &:nth-of-type(3) {
+                  bottom: 0;
+                  width: 50%;
+                }
+
+                &:nth-of-type(4) {
+                  margin-top: 15%;
+                  width: 40%;
+                }
+
+                &:nth-of-type(5) {
+                  width: 10%;
+                }
+              }
+            }
+
+            &.game6 {
+              img {
+                &:nth-of-type(1) {
+                  width: 100%;
+                  height: 100%;
+                }
+
+                &:nth-of-type(2) {
+                  width: 50%;
+                }
+              }
+            }
+
+            &.game7 {
+              width: 100%;
+              height: 100%;
+              overflow: hidden;
+              position: absolute;
+
+              img {
+                position: absolute;
+
+                &:nth-of-type(2) {
+                  display: none;
+                }
+
+                &:nth-of-type(3) {
+                  display: none;
+                }
+
+                &:nth-of-type(4) {
+                  display: none;
+                }
+
+                &:nth-of-type(5) {
+                  display: none;
+                }
+
+                &:nth-of-type(6) {
+                  display: none;
+                }
+
+                &:nth-of-type(7) {
+                  display: none;
+                }
+
+                &:nth-of-type(8) {
+                  display: none;
+                }
+
+                &:nth-of-type(9) {
+                  display: none;
+                }
+
+                &:nth-of-type(10) {
+                  display: none;
+                }
+
+                &:nth-of-type(11) {
+                  display: none;
+                }
+
+                &:nth-of-type(12) {
+                  display: none;
+                }
+
+                &:nth-of-type(13) {
+                  display: none;
+                }
+
+                &:nth-of-type(14) {
+                  display: none;
+                }
+
+                &:nth-of-type(15) {
+                  display: none;
+                }
+
+                &:nth-of-type(16) {
+                  display: none;
+                }
+
+                &:nth-of-type(17) {
+                  display: none;
+                }
+
+                &:nth-of-type(18) {
+                  top: 30px;
+                  left: 5%;
+                  width: 30%;
+                }
+
+                &:nth-of-type(19) {
+                  top: 30px;
+                  width: 30%;
+                  left: 60%;
+                }
+
+                &:nth-of-type(20) {
+                  top: 30px;
+                  width: 20%;
+                }
+
+                &:nth-of-type(21) {
+                  width: 50%;
+                  bottom: 20px;
+                }
+              }
+            }
+
+            &.game8 {
+              img {
+                &:nth-of-type(9) {
+                  width: 50%;
+                  bottom: 50px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .ltd {
+    .inner {
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 50px;
+  
+      article {
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        font-size: 0;
+  
+        a {
+          transition: filter 0.5s;
+  
+          &:hover {
+            filter: opacity(0.5);
+          }
+        }
+      }
+    }
+  }
+  .topic {
+    .inner {
+      width: 100%;
+      height: 100%;
+
+      .vidList {
+        article {
+          h2 {
+            width: 70%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+          }
+        }
+      }
+
+      button {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  footer {
+    .inner {
+      width: 100%;
+
+      .foot_menu {
+        flex-wrap: wrap;
+      }
+
+      .foot_add {
+        flex-wrap: wrap;
+      }
+    }
+  }
+
+  #subVisual {
+    .inner {
+      width: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  #content {
+    padding: 0 10px;
+    width: 100%;
+  }
+
+  #newCon {
+    #map {
+      width: 80%;
+      height: 400px;
+      margin-left: 20px;
+    }
+
+    span:nth-of-type(2) {
+      display: block;
+    }
+
+    table {
+      tbody {
+        tr {
+          td {
+            white-space: wrap;
+          }
+        }
+      }
+    }
+  }
+}

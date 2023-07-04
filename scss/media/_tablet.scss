@@ -1,0 +1,218 @@
+@media screen and (max-width: 800px) {
+  header {
+    .inner {
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      position: relative;
+
+      h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        a {
+          img {
+            width: 120px;
+          }
+        }
+
+
+      }
+
+      .logIn {
+        display: none;
+      }
+
+      .waple {
+        display: flex;
+      }
+
+      .wapleOn {
+        display: block;
+      }
+
+      .gnb {
+        display: none;
+      }
+    }
+  }
+
+  .title {
+    .inner {
+      position: relative;
+
+      .pack {
+        width: 150px;
+        height: 270px;
+        left: 20px;
+        top: 70%;
+
+        img {
+          width: 50px;
+        }
+      }
+
+      .screen {
+        width: 90%;
+
+        left: 20px;
+      }
+
+      .consol {
+        bottom: 0;
+        left: 40%;
+
+        img {
+          bottom: 30px;
+          width: 150px;
+
+          &:nth-of-type(2) {
+            bottom: 7px;
+            right: -150px;
+            width: 150px;
+          }
+        }
+
+        .packs {
+          width: 40px;
+          left: 60px;
+          top: -150px;
+        }
+      }
+
+      .ch {
+        .text {
+          P {
+            width: 120px;
+            height: 80px;
+            font: bold 11px/30px "맑은 고딕";
+            bottom: 160px;
+            left: 60%;
+          }
+
+          .arrow1 {
+            bottom: 170px;
+            left: 70%;
+          }
+
+          .arrow2 {
+            bottom: 177px;
+            left: 70.2%;
+          }
+        }
+
+        img {
+          &:nth-of-type(2) {
+            display: none;
+          }
+
+          &:nth-of-type(4) {
+            width: 70px;
+            right: 10%;
+            bottom: 40px;
+          }
+        }
+      }
+    }
+  }
+
+  #content {
+    #subSide {
+      display: none;
+    }
+
+    #subSide2 {
+      display: none;
+    }
+  }
+
+  #newContent {
+    padding-top: 20px;
+    width: 80%;
+    margin: 0 auto;
+
+    h2 {
+      border-bottom: 2px solid darkblue;
+      font: bold 30px/1.5 "arial";
+      color: darkblue;
+    }
+
+    span {
+      &:nth-of-type(1) {
+        font: bold 12px/1.5 "애플 고딕";
+        color: darkblue;
+      }
+
+      &:nth-of-type(2) {
+        font: bold 12px/1.5 "애플 고딕";
+      }
+    }
+  }
+
+  #join {
+
+.inner{
+  #member{
+    max-width: 80%;
+        table {
+          tbody {
+            tr {
+              td {
+                input[type="checkbox"] {
+                  display: flex;
+                }
+              }    
+            }
+          }
+        } 
+      }
+    }
+  }
+
+
+
+
+  footer {
+
+    .inner {
+
+      padding: 5px;
+
+
+      .foot_menu {
+
+
+        li {
+
+
+
+          a {
+
+            font: 8px/15px '맑은 고딕';
+
+          }
+
+          &:first-child>a {
+            font: bold 8px/15px '맑은 고딕';
+          }
+        }
+      }
+
+      .foot_add {
+
+        li {
+
+          font: 8px/15px '맑은 고딕';
+
+        }
+      }
+
+      span {
+
+        font: 8px/15px '맑은 고딕';
+      }
+    }
+  }
+}

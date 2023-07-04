@@ -1,0 +1,162 @@
+fieldset {
+    border: none;
+}
+
+#newContent {
+    padding-top: 20px;
+    width: 80%;
+    margin: 0 auto;
+
+    h2 {
+        border-bottom: 2px solid darkblue;
+        font: bold 30px/1.5 "arial";
+        color: darkblue;
+    }
+
+    span {
+        &:nth-of-type(1) {
+            font: bold 12px/1.5 "애플 고딕";
+            color: darkblue;
+        }
+
+        &:nth-of-type(2) {
+            font: bold 12px/1.5 "애플 고딕";
+        }
+
+    }
+}
+
+#join {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+
+    .inner {
+        width: 40%;
+        margin: 0 auto;
+
+        #member {
+            border-radius: 10px;
+            max-width: 70%;
+            min-width: 400px;
+            border: 1px solid #bbb;
+            margin: 0 auto;
+            padding: 20px;
+            box-shadow: 2px 2px 10px rgba($color: #000000, $alpha: 0.2);
+
+            table {
+                tbody {
+                    tr {
+                        display: block;
+                        width: 100%;
+                        padding: 10px;
+                        border: 1px solid #bbb;
+                        border-radius: 10px;
+                        margin-bottom: 10px;
+                        box-shadow: 1px 1px 2px rgba($color: #000000, $alpha: 0.2);
+
+
+                        &:last-child {
+                            border: none;
+                            box-shadow: none;
+                        }
+
+                        th,
+                        td {
+                            padding: 0 10px;
+                        }
+
+                        th {
+                            width: 20%;
+                            font: bold 14px/1 "arial";
+                            white-space: nowrap;
+
+                            input[type='reset'],
+                            input[type="submit"] {
+                                width: 40%;
+                                height: 40px;
+                                border: 1px solid #bbb;
+                                font: bold 14px/20px "arial";
+                                color: #555;
+                                cursor: pointer;
+                                background-color: #fff;
+                                transition: 0.5s;
+                                border-radius: 10px;
+                                box-shadow: 1px 1px 2px rgba($color: #000000, $alpha: 0.2);
+                                margin: 10px;
+
+                                &:hover {
+                                    background-color: darkblue;
+                                    color: #fff;
+                                }
+                            }
+                        }
+
+                        td {
+                            border-left: 1px dotted #bbb;
+
+                            input[type='text'],
+                            input[type='password'] {
+                                width: 80%;
+                                height: 25px;
+                                font: 11px/25px "맑은 고딕";
+                                padding: 0 0 0 5px;
+                            }
+
+                            input[type="radio"] {
+                                margin-right: 30px;
+                            }
+
+                            input[type="checkbox"] {
+                                margin-right: 10px;
+                            }
+
+                            label {
+                                font: 12px/1 "맑은 고딕";
+                            }
+
+                            textarea {
+                                width: 100%;
+                                height: 100px;
+                                font: 11px/25px "맑은 고딕";
+                                padding: 0 0 0 5px;
+                            }
+
+                            #toggle {
+                                display: inline-flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: 25px;
+                                height: 25px;
+                                border-radius: 50%;
+                                background-color: rgba(skyblue, 0.2);
+                                cursor: pointer;
+
+                                &::before {
+                                    content: '\f06e';
+                                    font-family: fontAwesome;
+                                }
+
+                                &.hide::before {
+                                    content: '\f070';
+                                    font-family: fontAwesome;
+                                }
+
+                            }
+
+                            p {
+                                font: 11px/1.5 "맑은 고딕";
+                                color: red;
+                            }
+
+                            span {
+                                font: 11px/1.5 "맑은 고딕";
+                                color: blue;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

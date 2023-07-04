@@ -1,0 +1,16 @@
+@charset "uft-8";
+
+@import "common/header";
+@import "main.scss";
+@import "news.scss";
+@import "common/footer.scss";
+@import "road.scss";
+@import "join.scss";
+@import "result.scss";
+@import "company.scss";
+
+//media
+
+@import "media/web";
+@import "media/tablet";
+@import "media/mobile";
