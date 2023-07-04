@@ -2094,7 +2094,7 @@ fieldset {
 }
 #join .inner #member {
   border-radius: 10px;
-  max-width: 70%;
+  max-width: 45%;
   border: 1px solid #bbb;
   margin: 0 auto;
   padding: 20px;
@@ -2111,6 +2111,7 @@ fieldset {
   border-radius: 10px;
   margin-bottom: 10px;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
 }
 #join .inner #member table tbody tr:last-child {
   border: none;
@@ -2121,7 +2122,7 @@ fieldset {
   padding: 0 10px;
 }
 #join .inner #member table tbody tr th {
-  width: 20%;
+  width: 15%;
   font: bold 14px/1 "arial";
   white-space: nowrap;
 }
@@ -2137,7 +2138,7 @@ fieldset {
   transition: 0.5s;
   border-radius: 10px;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-  margin: 10px;
+  text-align: center;
 }
 #join .inner #member table tbody tr th input[type=reset]:hover,
 #join .inner #member table tbody tr th input[type=submit]:hover {

@@ -153,9 +153,10 @@
 
   #join {
 
-.inner{
-  #member{
-    max-width: 80%;
+    .inner {
+      #member {
+        max-width: 80%;
+
         table {
           tbody {
             tr {
@@ -163,10 +164,10 @@
                 input[type="checkbox"] {
                   display: flex;
                 }
-              }    
+              }
             }
           }
-        } 
+        }
       }
     }
   }
