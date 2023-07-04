@@ -235,7 +235,7 @@ header .inner .logIn li a {
   font: 12px/1 "애플 고딕";
 }
 header .inner .logIn li a:hover {
-  font: bold 13px/1 "애플 고딕";
+  font: bold 12px/1 "애플 고딕";
 }
 
 #subVisual {
@@ -326,19 +326,63 @@ header .inner .logIn li a:hover {
 }
 #visual .frame {
   position: relative;
-  width: 700%;
+  width: 100%;
   height: 700px;
-  display: flex;
-  transition: 0.5s;
 }
 #visual .frame li {
-  width: 14.2857142857%;
+  width: 100%;
   height: 700px;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 #visual .frame li img {
   width: 100%;
   max-height: 700px;
   object-fit: fill;
+}
+#visual .frame li.on {
+  opacity: 1;
+  z-index: 2;
+}
+#visual .btns {
+  width: 100%;
+  height: 10px;
+  background-color: rgba(0, 0, 139, 0.1);
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+}
+#visual .btns div {
+  border-right: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
+  width: 14.2857142857%;
+  height: 10px;
+  cursor: pointer;
+}
+#visual .btns div div {
+  width: 100%;
+  height: 10px;
+}
+#visual .btns div div.bar {
+  width: 0%;
+  height: 10px;
+  background-color: darkblue;
+}
+#visual .btns div.on {
+  width: 14.2857142857%;
+  height: 10px;
+  background-color: rgba(0, 0, 139, 0.5);
+}
+#visual .btns div.on .bar {
+  width: 0%;
+  height: 10px;
+  background-color: darkblue;
+  animation: bar 3s;
+  opacity: 1;
 }
 #visual nav {
   width: 100%;
@@ -356,33 +400,29 @@ header .inner .logIn li a:hover {
   display: block;
   clear: both;
 }
-#visual nav .prev,
-#visual nav .next {
+#visual nav .start,
+#visual nav .stop {
   width: 40px;
   height: 40px;
   border: solid 2px darkblue;
-  border-radius: 10px;
+  border-radius: 5px;
   margin-right: 40px;
   position: relative;
   transition: 0.5s;
 }
-#visual nav .prev .clip {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 25px;
-  height: 25px;
-  clip-path: polygon(100% 0, 100% 100%, 0% 50%);
+#visual nav .start.on,
+#visual nav .stop.on {
   background-color: darkblue;
 }
-#visual nav .prev:hover {
-  background-color: darkblue;
-}
-#visual nav .prev:hover .clip {
+#visual nav .start.on .clip,
+#visual nav .stop.on .clip {
   background-color: #fff;
 }
-#visual nav .next .clip {
+#visual nav .start.on div,
+#visual nav .stop.on div {
+  background-color: #fff;
+}
+#visual nav .start .clip {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -392,10 +432,27 @@ header .inner .logIn li a:hover {
   clip-path: polygon(0 0, 0 100%, 100% 50%);
   background-color: darkblue;
 }
-#visual nav .next:hover {
+#visual nav .start:hover {
   background-color: darkblue;
 }
-#visual nav .next:hover .clip {
+#visual nav .start:hover .clip {
+  background-color: #fff;
+}
+#visual nav .stop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#visual nav .stop div {
+  width: 22px;
+  height: 22px;
+  border-radius: 2px;
+  background-color: darkblue;
+}
+#visual nav .stop:hover {
+  background-color: darkblue;
+}
+#visual nav .stop:hover div {
   background-color: #fff;
 }
 
@@ -423,9 +480,6 @@ header .inner .logIn li a:hover {
   justify-content: space-around;
 }
 .new .inner .content li {
-  width: 300px;
-}
-.new .inner .content li:nth-of-type(4) img {
   width: 300px;
 }
 .new .inner .content li a {
@@ -509,7 +563,7 @@ header .inner .logIn li a:hover {
   position: absolute;
   bottom: 160px;
   left: 100px;
-  animation: text 3s infinite reverse;
+  animation: text3 3s infinite reverse;
 }
 .title .inner .ch .text .arrow2 {
   width: 25px;
@@ -519,7 +573,7 @@ header .inner .logIn li a:hover {
   position: absolute;
   bottom: 168px;
   left: 100px;
-  animation: text 3s infinite reverse;
+  animation: text2 3s infinite reverse;
 }
 .title .inner .ch img {
   position: absolute;
@@ -1771,6 +1825,36 @@ header .inner .logIn li a:hover {
     transform: translateX(0%);
   }
 }
+@keyframes text2 {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes text3 {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(45%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes bar {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
 #newCon {
   width: 100%;
 }
@@ -1903,11 +1987,8 @@ footer .inner h2 a img {
 footer .inner .foot_menu {
   display: flex;
   width: 60%;
-}
-footer .inner .foot_menu li {
-  padding: 0 10px;
-  height: 14px;
-  border-right: 1px solid #444;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 footer .inner .foot_menu li:last-child {
   border-right: none;
@@ -1920,7 +2001,6 @@ footer .inner .foot_menu li a {
   justify-content: space-around;
 }
 footer .inner .foot_menu li:first-child a {
-  width: 110px;
   font: bold 12px/15px "맑은 고딕";
   text-align: left;
 }
@@ -2326,17 +2406,57 @@ fieldset {
   #visual .frame {
     height: 100%;
   }
+  .new {
+    width: 100%;
+    margin-bottom: 150px;
+  }
   .new .inner {
     width: 100%;
-    padding: 20px;
+  }
+  .new .inner h2 {
+    font: bold 35px/1.5 "arial";
+    color: darkblue;
+    margin-left: 20px;
+  }
+  .new .inner p {
+    font: 17px/1.5 "애플 고딕";
+    color: #444;
+    margin-left: 20px;
+    margin-bottom: 40px;
   }
   .new .inner .content {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: column;
   }
   .new .inner .content li {
-    margin-bottom: 10px;
+    width: 90%;
+    padding: 10px;
+    margin: 0 auto;
+  }
+  .new .inner .content li a {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    border: 1px solid darkblue;
+    padding: 5px;
+  }
+  .new .inner .content li a h3 {
+    font: bold 16px/1.5 "arial";
+    color: #444;
+  }
+  .new .inner .content li a p {
+    display: block;
+    font: 12px/1.5 "arial";
+    color: #777;
+  }
+  .new .inner .content li a span {
+    font: 14px/1.5 "arial";
+    color: darkblue;
+  }
+  .new .inner .content li a img {
+    margin: 10px;
   }
   .title .inner {
     width: 100%;
@@ -2566,9 +2686,6 @@ fieldset {
   }
   footer .inner {
     width: 100%;
-  }
-  footer .inner .foot_menu {
-    flex-wrap: wrap;
   }
   footer .inner .foot_add {
     flex-wrap: wrap;
