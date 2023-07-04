@@ -482,12 +482,18 @@ header .inner .logIn li a:hover {
 .new .inner .content li {
   width: 300px;
 }
+.new .inner .content li:nth-of-type(3) a p {
+  display: block;
+}
+.new .inner .content li:nth-of-type(3) a p.mo {
+  display: none;
+}
 .new .inner .content li a {
   display: block;
   width: 300px;
   height: 400px;
   position: relative;
-  border: 1px solid skyblue;
+  border: 1px solid darkblue;
   padding: 5px;
 }
 .new .inner .content li a h3 {
@@ -509,6 +515,7 @@ header .inner .logIn li a:hover {
   margin-left: 10px;
 }
 .new .inner .content li a img {
+  border: 1px solid darkblue;
   width: 298px;
   object-fit: cover;
   position: absolute;
@@ -536,6 +543,13 @@ header .inner .logIn li a:hover {
 }
 .title .inner p {
   font: 17px/1.5 "애플 고딕";
+  color: skyblue;
+  margin-left: 20px;
+  margin-bottom: 40px;
+}
+.title .inner .mo {
+  display: none;
+  font: 15px/1.5 "애플 고딕";
   color: skyblue;
   margin-left: 20px;
   margin-bottom: 40px;
@@ -2414,19 +2428,7 @@ fieldset {
   .new .inner {
     width: 100%;
   }
-  .new .inner h2 {
-    font: bold 35px/1.5 "arial";
-    color: darkblue;
-    margin-left: 20px;
-  }
-  .new .inner p {
-    font: 17px/1.5 "애플 고딕";
-    color: #444;
-    margin-left: 20px;
-    margin-bottom: 40px;
-  }
   .new .inner .content {
-    display: flex;
     flex-direction: column;
   }
   .new .inner .content li {
@@ -2436,27 +2438,25 @@ fieldset {
   }
   .new .inner .content li a {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     width: 100%;
     height: 300px;
-    position: relative;
     border: 1px solid darkblue;
-    padding: 5px;
+    padding: 20px;
   }
   .new .inner .content li a h3 {
-    font: bold 16px/1.5 "arial";
-    color: #444;
+    height: 30px;
   }
   .new .inner .content li a p {
-    display: block;
-    font: 12px/1.5 "arial";
-    color: #777;
-  }
-  .new .inner .content li a span {
-    font: 14px/1.5 "arial";
-    color: darkblue;
+    width: 50%;
+    height: 130px;
+    text-align: top;
   }
   .new .inner .content li a img {
+    width: 31vw;
+    position: absolute;
+    top: 7%;
+    left: 55%;
     margin: 10px;
   }
   .title .inner {
@@ -2777,6 +2777,7 @@ fieldset {
     top: -150px;
   }
   .title .inner .ch .text P {
+    border: 2px solid pink;
     width: 120px;
     height: 80px;
     font: bold 11px/30px "맑은 고딕";
@@ -2784,6 +2785,7 @@ fieldset {
     left: 60%;
   }
   .title .inner .ch .text .arrow1 {
+    background-color: pink;
     bottom: 170px;
     left: 70%;
   }
@@ -2798,6 +2800,48 @@ fieldset {
     width: 70px;
     right: 10%;
     bottom: 40px;
+  }
+  .new {
+    width: 100%;
+    margin-bottom: 150px;
+  }
+  .new .inner {
+    width: 100%;
+  }
+  .new .inner .content {
+    flex-direction: column;
+  }
+  .new .inner .content li {
+    width: 90%;
+    padding: 10px;
+  }
+  .new .inner .content li a {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 600px;
+    border: 1px solid darkblue;
+    padding: 20px;
+  }
+  .new .inner .content li a h3 {
+    height: 600px;
+  }
+  .new .inner .content li a p {
+    width: 100%;
+    height: 300px;
+    text-align: top;
+  }
+  .new .inner .content li a span {
+    font: 10px/1.5 "arial";
+    width: 100%;
+    height: 15px;
+  }
+  .new .inner .content li a img {
+    width: 80%;
+    position: absolute;
+    top: 10%;
+    left: 8%;
+    margin: 10px;
   }
   #content #subSide {
     display: none;
@@ -2864,41 +2908,56 @@ fieldset {
     width: 15px;
     height: 15px;
   }
+  .new {
+    width: 100%;
+    margin-bottom: 150px;
+  }
+  .new .inner {
+    width: 100%;
+  }
   .new .inner .content {
-    display: block;
+    flex-direction: column;
   }
   .new .inner .content li {
-    width: 100%;
+    width: 90%;
+    padding: 10px;
+  }
+  .new .inner .content li:nth-of-type(3) a p {
+    display: none;
+  }
+  .new .inner .content li:nth-of-type(3) a p.mo {
+    display: block;
+  }
+  .new .inner .content li a {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-  }
-  .new .inner .content li:nth-of-type(3) p {
     width: 100%;
-    white-space: wrap;
+    height: 500px;
+    border: 1px solid darkblue;
+    padding: 20px;
+  }
+  .new .inner .content li a h3 {
+    height: 200px;
+  }
+  .new .inner .content li a p {
+    width: 100%;
+    height: 200px;
+    text-align: top;
+  }
+  .new .inner .content li a span {
+    font: 10px/1.5 "arial";
+    width: 100%;
+    height: 15px;
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
-  .new .inner .content li:nth-of-type(4) img {
-    width: 100%;
-  }
-  .new .inner .content li a {
-    width: 100%;
-    height: 500px;
-  }
-  .new .inner .content li a p {
-    font: 12px/1.5 "arial";
-    color: #777;
-    margin-bottom: 10px;
-    margin-left: 0;
-  }
-  .new .inner .content li a span {
-    font: 14px/1.5 "arial";
-    color: darkblue;
-    margin-left: 10px;
-  }
   .new .inner .content li a img {
-    width: 100%;
+    width: 80%;
+    position: absolute;
+    top: 17%;
+    left: 5%;
+    margin: 10px;
   }
   #result .inner {
     width: 90%;
@@ -2919,7 +2978,13 @@ fieldset {
     width: 100px;
   }
   .title {
-    height: 60vh;
+    height: 80vh;
+  }
+  .title .inner p {
+    margin-bottom: 15px;
+  }
+  .title .inner .mo {
+    display: block;
   }
   .title .inner .screen {
     display: none;
@@ -2932,12 +2997,13 @@ fieldset {
   }
   .title .inner .pack {
     width: 95%;
+    min-width: 202px;
     height: 65%;
     left: 10px;
     top: 30%;
   }
   .title .inner .pack img {
-    width: 70px;
+    width: 95px;
   }
   #join .inner #member {
     max-width: 95%;

@@ -46,23 +46,7 @@
 
     .inner {
       width: 100%;
-
-
-      h2 {
-        font: bold 35px/1.5 "arial";
-        color: darkblue;
-        margin-left: 20px;
-      }
-
-      p {
-        font: 17px/1.5 "애플 고딕";
-        color: #444;
-        margin-left: 20px;
-        margin-bottom: 40px;
-      }
-
       .content {
-        display: flex;
         flex-direction: column;
 
         li {
@@ -73,30 +57,27 @@
 
           a {
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: column;
             width: 100%;
             height: 300px;
-            position: relative;
             border: 1px solid darkblue;
-            padding: 5px;
+            padding: 20px;
 
             h3 {
-              font: bold 16px/1.5 "arial";
-              color: #444;
+              height: 30px;
+
             }
 
             p {
-              display: block;
-              font: 12px/1.5 "arial";
-              color: #777;
+              width: 50%;
+              height: 130px;
+              text-align: top;
             }
-
-            span {
-              font: 14px/1.5 "arial";
-              color: darkblue;
-            }
-
             img {
+              width: 31vw;
+              position: absolute;
+              top: 7%;
+              left: 55%;
               margin: 10px;
             }
           }
