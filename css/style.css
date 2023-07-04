@@ -385,13 +385,13 @@ header .inner .logIn li a:hover {
   opacity: 1;
 }
 #visual nav {
-  width: 100%;
+  width: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-40%);
   margin-top: 40px;
   cursor: pointer;
 }
