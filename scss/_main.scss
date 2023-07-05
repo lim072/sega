@@ -1510,8 +1510,8 @@
       background-color: #fff;
       outline: none;
       border: 2px solid skyblue;
-      font: bold 18px/1.5 "애플 고딕";
-      color: skyblue;
+
+
       cursor: pointer;
       position: relative;
       margin-top: 40px;
@@ -1519,6 +1519,11 @@
       transform: translateX(-50%);
       transition: 0.5s 0.1s;
       overflow: hidden;
+
+      a {
+        font: bold 18px/1.5 "애플 고딕";
+        color: skyblue;
+      }
 
       div {
         width: 10px;
@@ -1533,7 +1538,11 @@
 
       &:hover {
         background-color: skyblue;
-        color: #444;
+
+
+        a {
+          color: #fff;
+        }
 
         div {
           left: 300px;

@@ -1586,8 +1586,6 @@ header .inner .logIn li a:hover {
   background-color: #fff;
   outline: none;
   border: 2px solid skyblue;
-  font: bold 18px/1.5 "애플 고딕";
-  color: skyblue;
   cursor: pointer;
   position: relative;
   margin-top: 40px;
@@ -1595,6 +1593,10 @@ header .inner .logIn li a:hover {
   transform: translateX(-50%);
   transition: 0.5s 0.1s;
   overflow: hidden;
+}
+.topic .inner button a {
+  font: bold 18px/1.5 "애플 고딕";
+  color: skyblue;
 }
 .topic .inner button div {
   width: 10px;
@@ -1608,7 +1610,9 @@ header .inner .logIn li a:hover {
 }
 .topic .inner button:hover {
   background-color: skyblue;
-  color: #444;
+}
+.topic .inner button:hover a {
+  color: #fff;
 }
 .topic .inner button:hover div {
   left: 300px;
