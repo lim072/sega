@@ -625,6 +625,7 @@ header .inner .logIn li a:hover {
   border-bottom: 5px solid #000;
 }
 .title .inner .pack img {
+  cursor: pointer;
   width: 80px;
 }
 .title .inner .screen {
@@ -1460,6 +1461,7 @@ header .inner .logIn li a:hover {
   width: 50px;
   left: 140px;
   top: -240px;
+  cursor: pointer;
 }
 
 .ltd .inner {
