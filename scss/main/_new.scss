@@ -1,0 +1,82 @@
+.new {
+    width: 100%;
+    margin-bottom: 150px;
+
+    .inner {
+        width: 1500px;
+        margin: 0 auto;
+
+        h2 {
+            font: bold 35px/1.5 "arial";
+            color: darkblue;
+            margin-left: 20px;
+        }
+
+        p {
+            font: 17px/1.5 "애플 고딕";
+            color: #444;
+            margin-left: 20px;
+            margin-bottom: 40px;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-around;
+
+            li {
+                width: 300px;
+
+                &:nth-of-type(3) {
+                    a {
+                        p {
+                            display: block;
+
+                            &.mo {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+
+                a {
+                    display: block;
+                    width: 300px;
+                    height: 400px;
+                    position: relative;
+                    border: 1px solid darkblue;
+                    padding: 5px;
+
+                    h3 {
+                        font: bold 16px/1.5 "arial";
+                        color: #444;
+                        margin-bottom: 10px;
+                    }
+
+                    p {
+                        display: block;
+                        height: 170px;
+                        font: 12px/1.5 "arial";
+                        color: #777;
+                        margin-bottom: 10px;
+                        margin-left: 0;
+                    }
+
+                    span {
+                        font: 14px/1.5 "arial";
+                        color: darkblue;
+                        margin-left: 10px;
+                    }
+
+                    img {
+                        border: 1px solid darkblue;
+                        width: 298px;
+                        object-fit: cover;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+}

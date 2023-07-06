@@ -9,9 +9,17 @@
 @import "result.scss";
 @import "company.scss";
 
+
+//main
+@import "main/visual";
+@import "main/new";
+@import "main/title";
+@import "main/ltd";
+@import "main/topic";
+@import "main/keyframes";
+
 //media
 
 @import "media/web";
 @import "media/tablet";
 @import "media/mobile";
-
