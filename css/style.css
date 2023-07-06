@@ -265,6 +265,9 @@ header .inner .logIn li a:hover {
 #content #subSide .inner {
   width: 200px;
 }
+#content #subSide .inner ul {
+  position: relative;
+}
 #content #subSide .inner ul > a {
   display: block;
   width: 150px;
@@ -275,10 +278,6 @@ header .inner .logIn li a:hover {
   background-color: darkblue;
   text-align: center;
   border: 1px solid darkblue;
-}
-#content #subSide .inner ul > a:hover {
-  background-color: #fff;
-  color: darkblue;
 }
 #content #subSide .inner ul li {
   position: relative;
@@ -299,23 +298,553 @@ header .inner .logIn li a:hover {
   background-color: darkblue;
   color: #fff;
 }
-#content #subSide .inner ul li:nth-of-type(3) span::before, #content #subSide .inner ul li:nth-of-type(3) span::after {
+#content #subSide .inner ul span::before, #content #subSide .inner ul span::after {
   content: "";
   display: block;
   width: 5px;
   height: 30px;
   background-color: darkblue;
   position: absolute;
-  top: 50%;
+  bottom: -3%;
   left: 170px;
-  transform: translateY(-50%);
   border-radius: 5px;
 }
-#content #subSide .inner ul li:nth-of-type(3) span::before {
+#content #subSide .inner ul span::before {
   transform: translateY(-20%) rotate(45deg);
 }
-#content #subSide .inner ul li:nth-of-type(3) span::after {
+#content #subSide .inner ul span::after {
   transform: translateY(-80%) rotate(-45deg);
+}
+#content #subSide2 {
+  margin-top: 100px;
+  flex: 1;
+  width: 200px;
+  height: 40vh;
+}
+#content #subSide2 .inner {
+  width: 200px;
+}
+#content #subSide2 .inner ul {
+  position: relative;
+}
+#content #subSide2 .inner ul > a {
+  display: block;
+  width: 150px;
+  height: 42px;
+  font: bold 20px/40px "애플 고딕";
+  color: #ffffff;
+  transition: 0.7s;
+  background-color: darkblue;
+  text-align: center;
+  border: 1px solid darkblue;
+}
+#content #subSide2 .inner ul span::before, #content #subSide2 .inner ul span::after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 30px;
+  background-color: darkblue;
+  position: absolute;
+  top: 35%;
+  left: 170px;
+  border-radius: 5px;
+}
+#content #subSide2 .inner ul span::before {
+  transform: translateY(-20%) rotate(45deg);
+}
+#content #subSide2 .inner ul span::after {
+  transform: translateY(-80%) rotate(-45deg);
+}
+#content #subSide2 .inner ul li {
+  position: relative;
+}
+#content #subSide2 .inner ul li a {
+  display: block;
+  width: 150px;
+  height: 50px;
+  font: bold 20px/50px "애플 고딕";
+  color: darkblue;
+  transition: 0.7s;
+  background-color: #fff;
+  text-align: center;
+  border: 1px solid darkblue;
+  border-top: none;
+}
+#content #subSide2 .inner ul li a:hover {
+  background-color: darkblue;
+  color: #fff;
+}
+
+#newCon {
+  width: 100%;
+}
+#newCon h2 {
+  display: block;
+  font: bold 30px/1.5 "arial";
+  color: darkblue;
+  border-bottom: 1px solid darkblue;
+}
+#newCon h3 {
+  font: 12px/1.5 "애플 고딕";
+}
+#newCon h3 span {
+  font: bold 12px/1.5 "애플 고딕";
+  color: darkblue;
+}
+#newCon table {
+  width: 100%;
+  margin-top: 30px;
+  border-top: 2px solid #444;
+  border-collapse: collapse;
+  margin-bottom: 40px;
+}
+#newCon table thead tr th {
+  padding: 15px;
+  background-color: darkblue;
+  color: #fff;
+  font: bold 12px/1 "맑은 고딕";
+}
+#newCon table thead tr th:nth-of-type(1) {
+  width: 5%;
+}
+#newCon table thead tr th:nth-of-type(3) {
+  width: 10%;
+}
+#newCon table #newT tr:nth-of-type(odd) {
+  background-color: aliceblue;
+}
+#newCon table #newT tr:hover {
+  background-color: lightblue;
+}
+#newCon table #newT tr td {
+  padding: 10px;
+  border-bottom: 1px solid #000;
+  text-align: center;
+  font: 12px/1 "맑은 고딕";
+}
+#newCon table #newT tr td:nth-of-type(2) {
+  text-align: left;
+}
+#newCon table #newT tr td a {
+  color: #444;
+}
+#newCon .page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+#newCon .page .pagePrev,
+#newCon .page .pageNext {
+  width: 30px;
+  height: 30px;
+  border: solid 1px darkblue;
+  border-radius: 8px;
+  position: relative;
+  transition: 0.5s;
+}
+#newCon .page .pagePrev .clip {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  clip-path: polygon(100% 0, 100% 100%, 0% 50%);
+  background-color: darkblue;
+}
+#newCon .page .pagePrev:hover {
+  background-color: darkblue;
+}
+#newCon .page .pagePrev:hover .clip {
+  background-color: #fff;
+}
+#newCon .page .pageNext .clip {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  clip-path: polygon(0 0, 0 100%, 100% 50%);
+  background-color: darkblue;
+}
+#newCon .page .pageNext:hover {
+  background-color: darkblue;
+}
+#newCon .page .pageNext:hover .clip {
+  background-color: #fff;
+}
+#newCon .page .num {
+  width: 200px;
+  height: 30px;
+  font: 12px/30px "arial";
+  display: flex;
+  justify-content: space-around;
+}
+#newCon .page .num a {
+  color: #444;
+}
+
+footer {
+  width: 100%;
+  height: 200px;
+}
+footer .inner {
+  width: 1500px;
+  margin: 0 auto;
+  padding: 50px;
+  position: relative;
+}
+footer .inner h2 {
+  width: 150px;
+  margin-bottom: 20px;
+}
+footer .inner h2 a img {
+  width: 120px;
+}
+footer .inner .foot_menu {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+footer .inner .foot_menu li:last-child {
+  border-right: none;
+}
+footer .inner .foot_menu li a {
+  display: block;
+  font: 12px/15px "맑은 고딕";
+  color: #444;
+  text-align: center;
+  justify-content: space-around;
+}
+footer .inner .foot_menu li:first-child a {
+  font: bold 12px/15px "맑은 고딕";
+  text-align: left;
+}
+footer .inner .foot_add {
+  display: flex;
+  margin-top: 5px;
+  width: 80%;
+}
+footer .inner .foot_add li {
+  width: 230px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 14px;
+  font: 12px/15px "맑은 고딕";
+  color: #444;
+}
+footer .inner .foot_add li:first-child {
+  width: 300px;
+}
+footer .inner span {
+  display: block;
+  font: 12px/15px "맑은 고딕";
+  margin-top: 5px;
+}
+footer .inner .sns {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+footer .inner .sns a img {
+  width: 50px;
+}
+
+#map {
+  width: 800px;
+  height: 500px;
+  margin-top: 32px;
+  margin-bottom: 50px;
+  margin-left: 150px;
+}
+
+#addr1 #ad1 {
+  font-size: 18px;
+}
+#addr1 #ad2 {
+  font-size: 16px;
+}
+
+#addr2 {
+  margin-bottom: 50px;
+}
+#addr2 #ad1 {
+  font-size: 18px;
+}
+#addr2 #ad2 {
+  font-size: 16px;
+}
+
+fieldset {
+  border: none;
+}
+
+#newContent {
+  padding-top: 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+#newContent h2 {
+  border-bottom: 2px solid darkblue;
+  font: bold 30px/1.5 "arial";
+  color: darkblue;
+}
+#newContent h3 {
+  font: bold 12px/1.5 "애플 고딕";
+}
+#newContent h3 span {
+  font: bold 12px/1.5 "애플 고딕";
+  color: darkblue;
+}
+
+#join {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+#join .inner {
+  width: 100%;
+  margin: 0 auto;
+}
+#join .inner #member {
+  border-radius: 10px;
+  max-width: 45%;
+  border: 1px solid #bbb;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+#join .inner #member table {
+  width: 100%;
+}
+#join .inner #member table tbody tr {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+}
+#join .inner #member table tbody tr:last-child {
+  border: none;
+  box-shadow: none;
+}
+#join .inner #member table tbody tr th,
+#join .inner #member table tbody tr td {
+  padding: 0 10px;
+}
+#join .inner #member table tbody tr th {
+  width: 15%;
+  font: bold 14px/1 "arial";
+  white-space: nowrap;
+}
+#join .inner #member table tbody tr th input[type=reset],
+#join .inner #member table tbody tr th input[type=submit] {
+  width: 40%;
+  height: 40px;
+  border: 1px solid #bbb;
+  font: bold 14px/20px "arial";
+  color: #555;
+  cursor: pointer;
+  background-color: #fff;
+  transition: 0.5s;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+#join .inner #member table tbody tr th input[type=reset]:hover,
+#join .inner #member table tbody tr th input[type=submit]:hover {
+  background-color: darkblue;
+  color: #fff;
+}
+#join .inner #member table tbody tr td {
+  border-left: 1px dotted #bbb;
+}
+#join .inner #member table tbody tr td input[type=text],
+#join .inner #member table tbody tr td input[type=password] {
+  width: 80%;
+  height: 25px;
+  font: 11px/25px "맑은 고딕";
+  padding: 0 0 0 5px;
+}
+#join .inner #member table tbody tr td input[type=radio] {
+  margin-right: 30px;
+}
+#join .inner #member table tbody tr td input[type=checkbox] {
+  margin-right: 10px;
+}
+#join .inner #member table tbody tr td label {
+  font: 12px/1 "맑은 고딕";
+}
+#join .inner #member table tbody tr td textarea {
+  width: 100%;
+  height: 100px;
+  font: 11px/25px "맑은 고딕";
+  padding: 0 0 0 5px;
+}
+#join .inner #member table tbody tr td #toggle {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: rgba(135, 206, 235, 0.2);
+  cursor: pointer;
+}
+#join .inner #member table tbody tr td #toggle::before {
+  content: "\f06e";
+  font-family: fontAwesome;
+}
+#join .inner #member table tbody tr td #toggle.hide::before {
+  content: "\f070";
+  font-family: fontAwesome;
+}
+#join .inner #member table tbody tr td p {
+  font: 11px/1.5 "맑은 고딕";
+  color: red;
+}
+#join .inner #member table tbody tr td span {
+  font: 11px/1.5 "맑은 고딕";
+  color: blue;
+}
+
+#result {
+  margin-top: 50px;
+  width: 100%;
+}
+#result .inner {
+  width: 50%;
+  min-height: 500px;
+  border: 1px solid darkblue;
+  margin: 0 auto;
+  padding: 20px;
+}
+#result .inner h2 {
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  width: 100%;
+  font: bold 25px/1.5 "맑은 고딕";
+  border-bottom: 2px solid darkblue;
+  color: darkblue;
+}
+#result .inner span {
+  width: 80%;
+  display: block;
+  font: 16px/1.5 "맑은 고딕";
+  margin: 20px 0px;
+  color: skyblue;
+  border-bottom: 2px solid skyblue;
+  white-space: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 20px;
+}
+#result .inner p {
+  font: 14px/1.5 "맑은 고딕";
+  margin-left: 20px;
+}
+#result .inner a {
+  border: 1px solid darkblue;
+  background-color: #fff;
+  display: block;
+  width: 200px;
+  height: 50px;
+  font: bold 17px/48px "맑은 고딕";
+  color: darkblue;
+  margin: 0 auto;
+  margin-top: 50px;
+  transition: 0.5s 0.1s;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+#result .inner a div {
+  width: 5px;
+  height: 100px;
+  position: absolute;
+  background-color: #fff;
+  top: -25px;
+  left: -51px;
+  transform: rotate(45deg);
+  transition: 0.5s;
+}
+#result .inner a:hover {
+  background-color: darkblue;
+  color: #fff;
+}
+#result .inner a:hover div {
+  left: 250px;
+}
+
+#newCon .companyContent {
+  padding: 40px;
+}
+#newCon .companyContent .segaPU p,
+#newCon .companyContent .segaGE p {
+  min-height: 200px;
+  font: 12px/1.2 "맑은 고딕";
+  color: #555;
+}
+#newCon .companyContent .segaPU p span,
+#newCon .companyContent .segaGE p span {
+  display: block;
+  color: skyblue;
+  font: bold 12px/1.2 "맑은 고딕";
+  margin-bottom: 10px;
+}
+#newCon .companyContent .segaPU table,
+#newCon .companyContent .segaGE table {
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+}
+#newCon .companyContent .segaPU table #companyT tr th,
+#newCon .companyContent .segaGE table #companyT tr th {
+  width: 20%;
+  height: 30px;
+  background-color: #eee;
+  font: bold 12px/1 "맑은 고딕";
+  color: #555;
+}
+#newCon .companyContent .segaPU table #companyT tr td,
+#newCon .companyContent .segaGE table #companyT tr td {
+  width: 80%;
+  height: 30px;
+  background-color: #fff;
+  font: 12px/1 "맑은 고딕";
+  color: #333;
+  text-align: left;
+  padding-left: 20px;
+  border: none;
+}
+#newCon .companyContent .segaPU table #companyT tr:nth-of-type(1),
+#newCon .companyContent .segaGE table #companyT tr:nth-of-type(1) {
+  border-bottom: 1px solid #ddd;
+}
+#newCon .companyContent .segaPU table #companyT tr:nth-of-type(2),
+#newCon .companyContent .segaGE table #companyT tr:nth-of-type(2) {
+  border-bottom: 1px solid #ddd;
+}
+#newCon .companyContent .chart {
+  width: 100%;
+  margin: 50px 0;
+}
+#newCon .companyContent .chart h3 {
+  font: bold 18px/1 "맑은 고딕";
+  color: skyblue;
+}
+#newCon .companyContent .chart img {
+  width: 90%;
 }
 
 #visual {
@@ -469,7 +998,7 @@ header .inner .logIn li a:hover {
   color: darkblue;
   margin-left: 20px;
 }
-.new .inner p {
+.new .inner h3 {
   font: 17px/1.5 "애플 고딕";
   color: #444;
   margin-left: 20px;
@@ -541,7 +1070,7 @@ header .inner .logIn li a:hover {
   padding-top: 20px;
   margin-left: 20px;
 }
-.title .inner p {
+.title .inner h3 {
   font: 17px/1.5 "애플 고딕";
   color: skyblue;
   margin-left: 20px;
@@ -568,6 +1097,7 @@ header .inner .logIn li a:hover {
   left: 10px;
   border: 2px solid skyblue;
   animation: text 3s infinite reverse;
+  margin-bottom: 40px;
 }
 .title .inner .ch .text .arrow1 {
   width: 30px;
@@ -1475,7 +2005,7 @@ header .inner .logIn li a:hover {
   color: darkblue;
   margin-left: 20px;
 }
-.ltd .inner p {
+.ltd .inner h3 {
   font: 17px/1.5 "애플 고딕";
   color: #444;
   margin-left: 20px;
@@ -1515,7 +2045,7 @@ header .inner .logIn li a:hover {
   padding-top: 20px;
   margin-left: 20px;
 }
-.topic .inner p {
+.topic .inner h3 {
   font: 17px/1.5 "애플 고딕";
   color: skyblue;
   margin-left: 20px;
@@ -1875,533 +2405,6 @@ header .inner .logIn li a:hover {
     width: 100%;
   }
 }
-#newCon {
-  width: 100%;
-}
-#newCon h2 {
-  display: block;
-  font: bold 30px/1.5 "arial";
-  color: darkblue;
-  border-bottom: 1px solid darkblue;
-}
-#newCon span:nth-of-type(1) {
-  font: bold 12px/1.5 "애플 고딕";
-  color: darkblue;
-}
-#newCon span:nth-of-type(2) {
-  font: 12px/1.5 "애플 고딕";
-}
-#newCon table {
-  width: 100%;
-  margin-top: 30px;
-  border-top: 2px solid #444;
-  border-collapse: collapse;
-  margin-bottom: 40px;
-}
-#newCon table thead tr th {
-  padding: 15px;
-  background-color: darkblue;
-  color: #fff;
-  font: bold 12px/1 "맑은 고딕";
-}
-#newCon table thead tr th:nth-of-type(1) {
-  width: 5%;
-}
-#newCon table thead tr th:nth-of-type(3) {
-  width: 10%;
-}
-#newCon table #newT tr:nth-of-type(odd) {
-  background-color: aliceblue;
-}
-#newCon table #newT tr:hover {
-  background-color: lightblue;
-}
-#newCon table #newT tr td {
-  padding: 10px;
-  border-bottom: 1px solid #000;
-  text-align: center;
-  font: 12px/1 "맑은 고딕";
-}
-#newCon table #newT tr td:nth-of-type(2) {
-  text-align: left;
-}
-#newCon table #newT tr td a {
-  color: #444;
-}
-#newCon .page {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 100px;
-}
-#newCon .page .pagePrev,
-#newCon .page .pageNext {
-  width: 30px;
-  height: 30px;
-  border: solid 1px darkblue;
-  border-radius: 8px;
-  position: relative;
-  transition: 0.5s;
-}
-#newCon .page .pagePrev .clip {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 20px;
-  height: 20px;
-  clip-path: polygon(100% 0, 100% 100%, 0% 50%);
-  background-color: darkblue;
-}
-#newCon .page .pagePrev:hover {
-  background-color: darkblue;
-}
-#newCon .page .pagePrev:hover .clip {
-  background-color: #fff;
-}
-#newCon .page .pageNext .clip {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 20px;
-  height: 20px;
-  clip-path: polygon(0 0, 0 100%, 100% 50%);
-  background-color: darkblue;
-}
-#newCon .page .pageNext:hover {
-  background-color: darkblue;
-}
-#newCon .page .pageNext:hover .clip {
-  background-color: #fff;
-}
-#newCon .page .num {
-  width: 200px;
-  height: 30px;
-  font: 12px/30px "arial";
-  display: flex;
-  justify-content: space-around;
-}
-#newCon .page .num a {
-  color: #444;
-}
-
-footer {
-  width: 100%;
-  height: 200px;
-}
-footer .inner {
-  width: 1500px;
-  margin: 0 auto;
-  padding: 50px;
-  position: relative;
-}
-footer .inner h2 {
-  width: 150px;
-  margin-bottom: 20px;
-}
-footer .inner h2 a img {
-  width: 120px;
-}
-footer .inner .foot_menu {
-  display: flex;
-  width: 60%;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-footer .inner .foot_menu li:last-child {
-  border-right: none;
-}
-footer .inner .foot_menu li a {
-  display: block;
-  font: 12px/15px "맑은 고딕";
-  color: #444;
-  text-align: center;
-  justify-content: space-around;
-}
-footer .inner .foot_menu li:first-child a {
-  font: bold 12px/15px "맑은 고딕";
-  text-align: left;
-}
-footer .inner .foot_add {
-  display: flex;
-  margin-top: 5px;
-  width: 80%;
-}
-footer .inner .foot_add li {
-  width: 230px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  height: 14px;
-  font: 12px/15px "맑은 고딕";
-  color: #444;
-}
-footer .inner .foot_add li:first-child {
-  width: 300px;
-}
-footer .inner span {
-  display: block;
-  font: 12px/15px "맑은 고딕";
-  margin-top: 5px;
-}
-footer .inner .sns {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-footer .inner .sns a img {
-  width: 50px;
-}
-
-#map {
-  width: 800px;
-  height: 500px;
-  margin-top: 32px;
-  margin-bottom: 50px;
-  margin-left: 150px;
-}
-
-#addr1 #ad1 {
-  font-size: 18px;
-}
-#addr1 #ad2 {
-  font-size: 16px;
-}
-
-#addr2 {
-  margin-bottom: 50px;
-}
-#addr2 #ad1 {
-  font-size: 18px;
-}
-#addr2 #ad2 {
-  font-size: 16px;
-}
-
-fieldset {
-  border: none;
-}
-
-#newContent {
-  padding-top: 20px;
-  width: 80%;
-  margin: 0 auto;
-}
-#newContent h2 {
-  border-bottom: 2px solid darkblue;
-  font: bold 30px/1.5 "arial";
-  color: darkblue;
-}
-#newContent span:nth-of-type(1) {
-  font: bold 12px/1.5 "애플 고딕";
-  color: darkblue;
-}
-#newContent span:nth-of-type(2) {
-  font: bold 12px/1.5 "애플 고딕";
-}
-
-#join {
-  width: 100%;
-  margin-top: 30px;
-  margin-bottom: 50px;
-}
-#join .inner {
-  width: 100%;
-  margin: 0 auto;
-}
-#join .inner #member {
-  border-radius: 10px;
-  max-width: 45%;
-  border: 1px solid #bbb;
-  margin: 0 auto;
-  padding: 20px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-}
-#join .inner #member table {
-  width: 100%;
-}
-#join .inner #member table tbody tr {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #bbb;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-  margin: 0 auto;
-}
-#join .inner #member table tbody tr:last-child {
-  border: none;
-  box-shadow: none;
-}
-#join .inner #member table tbody tr th,
-#join .inner #member table tbody tr td {
-  padding: 0 10px;
-}
-#join .inner #member table tbody tr th {
-  width: 15%;
-  font: bold 14px/1 "arial";
-  white-space: nowrap;
-}
-#join .inner #member table tbody tr th input[type=reset],
-#join .inner #member table tbody tr th input[type=submit] {
-  width: 40%;
-  height: 40px;
-  border: 1px solid #bbb;
-  font: bold 14px/20px "arial";
-  color: #555;
-  cursor: pointer;
-  background-color: #fff;
-  transition: 0.5s;
-  border-radius: 10px;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-  text-align: center;
-}
-#join .inner #member table tbody tr th input[type=reset]:hover,
-#join .inner #member table tbody tr th input[type=submit]:hover {
-  background-color: darkblue;
-  color: #fff;
-}
-#join .inner #member table tbody tr td {
-  border-left: 1px dotted #bbb;
-}
-#join .inner #member table tbody tr td input[type=text],
-#join .inner #member table tbody tr td input[type=password] {
-  width: 80%;
-  height: 25px;
-  font: 11px/25px "맑은 고딕";
-  padding: 0 0 0 5px;
-}
-#join .inner #member table tbody tr td input[type=radio] {
-  margin-right: 30px;
-}
-#join .inner #member table tbody tr td input[type=checkbox] {
-  margin-right: 10px;
-}
-#join .inner #member table tbody tr td label {
-  font: 12px/1 "맑은 고딕";
-}
-#join .inner #member table tbody tr td textarea {
-  width: 100%;
-  height: 100px;
-  font: 11px/25px "맑은 고딕";
-  padding: 0 0 0 5px;
-}
-#join .inner #member table tbody tr td #toggle {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background-color: rgba(135, 206, 235, 0.2);
-  cursor: pointer;
-}
-#join .inner #member table tbody tr td #toggle::before {
-  content: "\f06e";
-  font-family: fontAwesome;
-}
-#join .inner #member table tbody tr td #toggle.hide::before {
-  content: "\f070";
-  font-family: fontAwesome;
-}
-#join .inner #member table tbody tr td p {
-  font: 11px/1.5 "맑은 고딕";
-  color: red;
-}
-#join .inner #member table tbody tr td span {
-  font: 11px/1.5 "맑은 고딕";
-  color: blue;
-}
-
-#result {
-  margin-top: 50px;
-  width: 100%;
-}
-#result .inner {
-  width: 50%;
-  min-height: 500px;
-  border: 1px solid darkblue;
-  margin: 0 auto;
-  padding: 20px;
-}
-#result .inner h2 {
-  margin: 0 auto;
-  text-align: center;
-  display: block;
-  width: 100%;
-  font: bold 25px/1.5 "맑은 고딕";
-  border-bottom: 2px solid darkblue;
-  color: darkblue;
-}
-#result .inner span {
-  width: 80%;
-  display: block;
-  font: 16px/1.5 "맑은 고딕";
-  margin: 20px 0px;
-  color: skyblue;
-  border-bottom: 2px solid skyblue;
-  white-space: wrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  margin-left: 20px;
-}
-#result .inner p {
-  font: 14px/1.5 "맑은 고딕";
-  margin-left: 20px;
-}
-#result .inner a {
-  border: 1px solid darkblue;
-  background-color: #fff;
-  display: block;
-  width: 200px;
-  height: 50px;
-  font: bold 17px/48px "맑은 고딕";
-  color: darkblue;
-  margin: 0 auto;
-  margin-top: 50px;
-  transition: 0.5s 0.1s;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  text-align: center;
-}
-#result .inner a div {
-  width: 5px;
-  height: 100px;
-  position: absolute;
-  background-color: #fff;
-  top: -25px;
-  left: -51px;
-  transform: rotate(45deg);
-  transition: 0.5s;
-}
-#result .inner a:hover {
-  background-color: darkblue;
-  color: #fff;
-}
-#result .inner a:hover div {
-  left: 250px;
-}
-
-#subSide2 {
-  margin-top: 100px;
-  flex: 1;
-  width: 200px;
-  height: 40vh;
-}
-#subSide2 .inner {
-  width: 200px;
-}
-#subSide2 .inner ul > a {
-  display: block;
-  width: 150px;
-  height: 42px;
-  font: bold 20px/40px "애플 고딕";
-  color: #ffffff;
-  transition: 0.7s;
-  background-color: darkblue;
-  text-align: center;
-  border: 1px solid darkblue;
-}
-#subSide2 .inner ul > a:hover {
-  background-color: #fff;
-  color: darkblue;
-}
-#subSide2 .inner ul li {
-  position: relative;
-}
-#subSide2 .inner ul li a {
-  display: block;
-  width: 150px;
-  height: 50px;
-  font: bold 20px/50px "애플 고딕";
-  color: darkblue;
-  transition: 0.7s;
-  background-color: #fff;
-  text-align: center;
-  border: 1px solid darkblue;
-  border-top: none;
-}
-#subSide2 .inner ul li a:hover {
-  background-color: darkblue;
-  color: #fff;
-}
-#subSide2 .inner ul li:nth-of-type(1) span::before, #subSide2 .inner ul li:nth-of-type(1) span::after {
-  content: "";
-  display: block;
-  width: 5px;
-  height: 30px;
-  background-color: darkblue;
-  position: absolute;
-  top: 50%;
-  left: 170px;
-  transform: translateY(-50%);
-  border-radius: 5px;
-}
-#subSide2 .inner ul li:nth-of-type(1) span::before {
-  transform: translateY(-20%) rotate(45deg);
-}
-#subSide2 .inner ul li:nth-of-type(1) span::after {
-  transform: translateY(-80%) rotate(-45deg);
-}
-
-#newCon .companyContent {
-  padding: 40px;
-}
-#newCon .companyContent .segaPU p, #newCon .companyContent .segaGE p {
-  min-height: 200px;
-  font: 12px/1.2 "맑은 고딕";
-  color: #555;
-}
-#newCon .companyContent .segaPU p span, #newCon .companyContent .segaGE p span {
-  display: block;
-  color: skyblue;
-  font: bold 12px/1.2 "맑은 고딕";
-  margin-bottom: 10px;
-}
-#newCon .companyContent .segaPU table, #newCon .companyContent .segaGE table {
-  border-top: 1px solid #aaa;
-  border-bottom: 1px solid #aaa;
-}
-#newCon .companyContent .segaPU table #companyT tr th, #newCon .companyContent .segaGE table #companyT tr th {
-  width: 20%;
-  height: 30px;
-  background-color: #eee;
-  font: bold 12px/1 "맑은 고딕";
-  color: #555;
-}
-#newCon .companyContent .segaPU table #companyT tr td, #newCon .companyContent .segaGE table #companyT tr td {
-  width: 80%;
-  height: 30px;
-  background-color: #fff;
-  font: 12px/1 "맑은 고딕";
-  color: #333;
-  text-align: left;
-  padding-left: 20px;
-  border: none;
-}
-#newCon .companyContent .segaPU table #companyT tr:nth-of-type(1), #newCon .companyContent .segaGE table #companyT tr:nth-of-type(1) {
-  border-bottom: 1px solid #ddd;
-}
-#newCon .companyContent .segaPU table #companyT tr:nth-of-type(2), #newCon .companyContent .segaGE table #companyT tr:nth-of-type(2) {
-  border-bottom: 1px solid #ddd;
-}
-#newCon .companyContent .chart {
-  width: 100%;
-  margin: 50px 0;
-}
-#newCon .companyContent .chart h3 {
-  font: bold 18px/1 "맑은 고딕";
-  color: skyblue;
-}
-#newCon .companyContent .chart img {
-  width: 90%;
-}
-
 @media screen and (max-width: 1800px) {
   header .inner {
     width: 100%;

@@ -1,13 +1,13 @@
 let packBox = document.querySelector(".pack");
-let consol = document.querySelector(".consol");
-let consolOn = consol.querySelector("img");
+let game = document.querySelector(".consol");
+let gameOn = game.querySelector("img");
 let packs = packBox.querySelectorAll("img");
 let selected = null;
 let selected2 = null;
 let sega = document.querySelector(".screenMain");
-let consolImg = consol.querySelectorAll("img");
-let consolPacks = consol.querySelectorAll(".packs");
-let consolPacksArr = Array.from(consolPacks);
+let gameImg = game.querySelectorAll("img");
+let gamePacks = game.querySelectorAll(".packs");
+let gamePacksArr = Array.from(gamePacks);
 
 for (let el of packs) {
   el.addEventListener("dragstart", () => {
@@ -15,25 +15,25 @@ for (let el of packs) {
       packBox.append(selected);
     }
     finishEffect(selected2);
-    for (let el of consolImg) {
+    for (let el of gameImg) {
       el.classList.add("on");
     }
-    consolImg[0].classList.remove("on");
+    gameImg[0].classList.remove("on");
   });
   el.addEventListener("dragstart", (e) => {
     selected = e.target;
     selected2 = e.target.id;
   });
-  consol.addEventListener("dragover", (e) => {
+  game.addEventListener("dragover", (e) => {
     e.preventDefault();
   });
-  consol.addEventListener("drop", function () {
-    consol.append(selected);
+  game.addEventListener("drop", function () {
+    game.append(selected);
     startEffect(selected2);
-    for (let el of consolImg) {
+    for (let el of gameImg) {
       el.classList.add("on");
     }
-    consolImg[1].classList.remove("on");
+    gameImg[1].classList.remove("on");
   });
   packBox.addEventListener("dragover", (e) => {
     e.preventDefault();
@@ -41,10 +41,10 @@ for (let el of packs) {
   packBox.addEventListener("drop", () => {
     packBox.prepend(selected);
     finishEffect(selected2);
-    for (let el of consolImg) {
+    for (let el of gameImg) {
       el.classList.add("on");
     }
-    consolImg[0].classList.remove("on");
+    gameImg[0].classList.remove("on");
   });
 }
 
