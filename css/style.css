@@ -1160,10 +1160,12 @@ fieldset {
 }
 .title .inner .screen {
   position: absolute;
+  top: 120px;
+  bottom: 0;
   left: 250px;
   margin: 0 auto;
   width: 1500px;
-  height: 500px;
+  height: 50vh;
   background-color: #fff;
   border: solid 2px #000;
   box-shadow: 0px 20px 50px 20px rgba(173, 216, 230, 0.5);
@@ -2751,9 +2753,6 @@ fieldset {
   header .inner .gnb {
     display: none;
   }
-  .title .inner {
-    position: relative;
-  }
   .title .inner .pack {
     width: 150px;
     height: 270px;
@@ -3005,14 +3004,12 @@ fieldset {
     display: none;
   }
   .title .inner .pack {
-    width: 95%;
-    min-width: 202px;
+    width: 90%;
     height: 65%;
-    left: 10px;
     top: 30%;
   }
   .title .inner .pack img {
-    width: 95px;
+    width: 90px;
   }
   #join .inner #member {
     max-width: 95%;

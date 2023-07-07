@@ -17,8 +17,6 @@
             width: 120px;
           }
         }
-
-
       }
 
       .logIn {
@@ -41,8 +39,6 @@
 
   .title {
     .inner {
-      position: relative;
-
       .pack {
         width: 150px;
         height: 270px;
@@ -84,7 +80,6 @@
 
       .ch {
         .text {
-         
           P {
             border: 2px solid pink;
             width: 120px;
@@ -131,8 +126,6 @@
         li {
           width: 90%;
           padding: 10px;
-     
-
 
           a {
             display: flex;
@@ -144,7 +137,6 @@
 
             h3 {
               height: 600px;
-
             }
 
             p {
@@ -152,7 +144,7 @@
               height: 300px;
               text-align: top;
             }
-            span{
+            span {
               font: 10px/1.5 "arial";
               width: 100%;
               height: 15px;
@@ -203,7 +195,6 @@
   }
 
   #join {
-
     .inner {
       #member {
         max-width: 80%;
@@ -223,47 +214,30 @@
     }
   }
 
-
-
-
   footer {
-
     .inner {
-
       padding: 5px;
 
-
       .foot_menu {
-
-
         li {
-
-
-
           a {
-
-            font: 8px/15px '맑은 고딕';
-
+            font: 8px/15px "맑은 고딕";
           }
 
-          &:first-child>a {
-            font: bold 8px/15px '맑은 고딕';
+          &:first-child > a {
+            font: bold 8px/15px "맑은 고딕";
           }
         }
       }
 
       .foot_add {
-
         li {
-
-          font: 8px/15px '맑은 고딕';
-
+          font: 8px/15px "맑은 고딕";
         }
       }
 
       span {
-
-        font: 8px/15px '맑은 고딕';
+        font: 8px/15px "맑은 고딕";
       }
     }
   }
